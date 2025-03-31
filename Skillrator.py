@@ -118,7 +118,7 @@ def CheckForUpdate():
     global NewestVersion
     if NewestVersion == 0:
         try:
-            req = urllib.request.Request('https://raw.githubusercontent.com/YourUsername/phBot-Plugins/master/Skillrator.py', headers={'User-Agent': 'Mozilla/5.0'})
+            req = urllib.request.Request('https://raw.githubusercontent.com/sanpolat11/Phbot-Plugins/refs/heads/main/Skillrator.py', headers={'User-Agent': 'Mozilla/5.0'})
             with urllib.request.urlopen(req) as f:
                 lines = str(f.read().decode("utf-8")).split()
                 for num, line in enumerate(lines):
